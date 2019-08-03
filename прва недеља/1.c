@@ -5,7 +5,7 @@
 // dimenzije prozora
 static int window_width, window_height;
 
-// Pocetne koordinate pozicije kamere
+// pocetne koordinate pozicije kamere
 int X = 10;
 int Y = 0;
 int Z = 3;
@@ -35,32 +35,32 @@ void sto(){
     glPushMatrix();
     glScaled(duzina, duzina, 0.05*duzina);
     glTranslated(0,0,-2*duzina);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     //prave se nogare, razlika je samo u translaciji
     glPushMatrix();
     glTranslated(-duzina,duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(-duzina,-duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(duzina,-duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(duzina,duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
 
     glPopMatrix();
@@ -149,7 +149,7 @@ static void on_reshape(int width, int height){
 
 int main(int argc, char** argv){
     
-    // inicijalizuje se GLUT-a
+    // inicijalizuje se GLUT
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH);
     
@@ -167,7 +167,7 @@ int main(int argc, char** argv){
     glClearColor(0.5, 0.5, 0.5, 0);
     glEnable(GL_DEPTH_TEST);
     
-    // Ulazak u glavnu petlju
+    // ulazak u glavnu petlju
     glutMainLoop();
     
     return 0;
