@@ -105,32 +105,32 @@ void sto(){
     glPushMatrix();
     glScaled(duzina, duzina, 0.05*duzina);
     glTranslated(0,0,-2*duzina);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     //prave se nogare, razlika je samo u translaciji
     glPushMatrix();
     glTranslated(-duzina,duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(-duzina,-duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(duzina,-duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
     
     glPushMatrix();
     glTranslated(duzina,duzina,-duzina-0.4);
     glScaled(0.05*duzina, 0.05*duzina, duzina/2);
-	glutSolidCube(duzina);
+    glutSolidCube(duzina);
     glPopMatrix();
 
     //materijal casa
